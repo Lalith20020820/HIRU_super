@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiru Super - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">🛒 Hiru Super</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="staff.html" class="nav-link">Staff</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" onclick="window.location.href='cart.html'">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="category-filter">
+                <button class="category-btn active" onclick="filterProducts('all')">All</button>
+                <button class="category-btn" onclick="filterProducts('fruits')">Fruits</button>
+                <button class="category-btn" onclick="filterProducts('vegetables')">Vegetables</button>
+                <button class="category-btn" onclick="filterProducts('dairy')">Dairy</button>
+                <button class="category-btn" onclick="filterProducts('beverages')">Beverages</button>
+                <button class="category-btn" onclick="filterProducts('bakery')">Bakery</button>
+                <button class="category-btn" onclick="filterProducts('meat')">Meat</button>
+            </div>
+            <div id="productsGrid" class="products-grid"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hiru Super. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

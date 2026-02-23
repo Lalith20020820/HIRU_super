@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiru Super - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">🛒 Hiru Super</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="staff.html" class="nav-link">Staff</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" onclick="window.location.href='cart.html'">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Hiru Super</h1>
+        <p>Your One-Stop Shop for Fresh & Quality Products</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <div class="container">
+        <h2>Why Choose Hiru Super?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🥬</div>
+                <h3>Fresh Products</h3>
+                <p>Daily fresh vegetables, fruits, and groceries delivered straight from farms</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Best Prices</h3>
+                <p>Competitive pricing with regular discounts and special offers</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Home Delivery</h3>
+                <p>Fast and reliable delivery service to your doorstep</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>Quality Assured</h3>
+                <p>All products undergo strict quality checks before reaching you</p>
+            </div>
+        </div>
+    </div>
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item" onclick="window.location.href='products.html?category=fruits'">
+                    <h3>🍎 Fruits</h3>
+                </div>
+                <div class="category-item" onclick="window.location.href='products.html?category=vegetables'">
+                    <h3>🥦 Vegetables</h3>
+                </div>
+                <div class="category-item" onclick="window.location.href='products.html?category=dairy'">
+                    <h3>🥛 Dairy</h3>
+                </div>
+                <div class="category-item" onclick="window.location.href='products.html?category=beverages'">
+                    <h3>🥤 Beverages</h3>
+                </div>
+                <div class="category-item" onclick="window.location.href='products.html?category=bakery'">
+                    <h3>🍞 Bakery</h3>
+                </div>
+                <div class="category-item" onclick="window.location.href='products.html?category=meat'">
+                    <h3>🥩 Meat</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Hiru Super. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
